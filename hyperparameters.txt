@@ -1,0 +1,92 @@
+GAN Hyperparamters:
+
+CIFAR-10
+
+
+
+ACGAN
+
+nb_epochs = 150
+batch_size = 100
+latent_size = 110
+Optimiser = Adam
+Learning rate = 2e-4
+adam_beta = 0.5
+
+FocalGAN
+
+nb_epochs = 150
+batch_size = 100
+latent_size = 110
+Optimiser = Adam
+Learning rate = 2e-4
+adam_beta = 0.5
+Gamma_focal = 2
+Alpha_focal = 0.25
+Pi_focal = 0.01
+
+
+MNIST
+
+
+
+ACGAN
+
+nb_epochs = 50
+batch_size = 128
+latent_size = 100
+Optimiser = Adam
+Discriminator Learning rate = 2e-4
+Generator Learning rate = 1e-3
+decay_steps = 53
+decay_rate = 0.95
+
+
+FocalGAN
+
+nb_epochs = 50
+batch_size = 128
+latent_size = 100
+Optimiser = Adam
+Discriminator Learning rate = 2e-4
+Generator Learning rate = 1e-3
+decay_steps = 53
+decay_rate = 0.95
+Gamma_focal = 2
+Alpha_focal = 4
+Pi_focal = 0.01
+
+
+Classifier Hyperparameters:
+
+CE Classifier
+
+batch_size = 100
+nb_epochs = 50
+Optimiser = Adam
+lr = 2e-4
+decay_steps = 400
+decay_rate = 0.95
+beta1 = 0.5
+
+
+Focal Classifer
+
+batch_size = 100
+nb_epochs = 50
+Optimiser = Adam
+lr = 2e-4
+decay_steps = 400
+decay_rate = 0.95
+beta1 = 0.5
+Gamma_focal = 2
+Alpha_focal = inverse_class_weights
+pi = 0.01
+
+
+
+
+
+
+
+
